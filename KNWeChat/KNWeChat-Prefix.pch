@@ -1,0 +1,43 @@
+//
+//  KNWeChat-Prefix.pch
+//  KNWeChat
+//
+//  Created by devzkn on 04/04/2017.
+//  Copyright © 2017 hisun. All rights reserved.
+//
+
+#ifndef KNWeChat_Prefix_pch
+#define KNWeChat_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__//里面定义的或者引用的东西，只能.m .mm文件使用
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+
+
+
+//调试模式
+
+#ifdef DEBUG
+
+#define HSLong(...)     NSLog(__VA_ARGS__)
+
+#else//发布模式
+
+#define HSLong(...)
+
+#endif
+
+
+
+
+
+#endif
+
+#endif /* KNWeChat_Prefix_pch */
